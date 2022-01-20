@@ -1,5 +1,14 @@
 // JavaScript Document
 
+//LOADER
+
+const loader=document.getElementById("preloader");
+
+window.addEventListener("load",function(){
+	loader.style.display="none";
+});
+
+
 const bar=document.getElementById('bar');
 const nav=document.getElementById('nav-items');
 const close=document.getElementById('close');
