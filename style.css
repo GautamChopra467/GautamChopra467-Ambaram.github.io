@@ -28,7 +28,22 @@ p{
 	color: #465B52;
 	margin: 15px 0 20px 0;
 }
-		
+
+#preloader{
+	width: 100%;
+	height: 100vh;
+	background: #3A3636 url("img/loader.gif") no-repeat center center;
+	background-size: 13%;
+	z-index: 999;
+}
+
+#preloader h2{
+	text-align: center;
+	margin: 0;
+	padding-top: 390px;
+	color: #d4e0e4;
+}
+
 #header{
 	display: flex;
 	align-items: center;
@@ -573,10 +588,18 @@ footer .install img{
 /*Start Media query*/
 
 @media(max-width:799px){
+	#preloader{
+	    background-size: 22%;
+        }
+	
+	#preloader h2{
+	    padding-top: 580px;
+        }
+	
 	#nav-items{
 		display: flex;
 		flex-direction: column;
-	    align-items: flex-start;
+	        align-items: flex-start;
 		justify-content: flex-start;
 		position: fixed;
 		top: 0;
@@ -692,6 +715,15 @@ footer .install img{
 
 @media (max-width: 477px)
 {
+	#preloader{
+	    background-size: 25%;
+        }
+	
+	#preloader h2{
+	    padding-top: 440px;
+	    font-size: 30px;
+        }
+	
 	#header {
         padding: 10px 30px;
     }
